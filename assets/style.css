@@ -130,6 +130,12 @@ body {
     white-space: pre-line;
 }
 
+@media (max-width:720px) {
+    .shlogan{
+        font-size: 2.5vw;
+    }
+}
+
 /* contact us sections*/
 .contact_us {
     width: 90%;
@@ -316,6 +322,7 @@ body {
     overflow: hidden;
     margin: 0 auto;
     border-radius: 8px;
+    max-height: 90vh;
 }
 
 .news_slider .slide {
@@ -352,17 +359,19 @@ body {
     color: #fff;
     font-size: 2rem;
     text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 2px;
+    font-family: var(--kannadafont) , "gungsuh";
+    font-weight: 900;
+    line-height: 1.2;
 }
 
 .news_slider .slide .info p {
+    font-family: var(--kannadafont) , "gungsuh";
     color: #fff;
     background: rgba(0, 0, 0, 0.1);
     font-size: 16px;
-    width: 60%;
-    padding: 10px;
+    width: 70%;
     border-radius: 4px;
+    padding-top: 1vh;
 }
 
 .news_slider .navigation {
@@ -389,6 +398,7 @@ body {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
+
 @media (max-width:820px) {
     .news_header {
         grid-template-columns: 1fr 1fr;
@@ -399,6 +409,7 @@ body {
 
     .news_slider {
         grid-area: 1/1/2/3;
+        height: 375px;
     }
 
     .news {
@@ -408,24 +419,20 @@ body {
     .news_subheader h1 {
         font-size: 3vw;
     }
-}
-
-@media (max-width: 820px) {
-    .news_slider {
-        height: 375px;
-    }
 
     .news_slider .slide .info {
         padding: 10px 25px;
+       bottom: 15px;
+        
     }
 
     .news_slider .slide .info h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .news_slider .slide .info p {
         width: 70%;
-        font-size: 15px;
+        font-size: 12px;
     }
 
 
@@ -444,13 +451,16 @@ body {
 
     .news_slider .slide .info {
         padding: 10px 20px;
+        bottom: 10px;
     }
 
     .news_slider .slide .info h2 {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
+        line-height: 1;
     }
-
+    
     .news_slider .slide .info p {
+        line-height: 1.2;
         width: 80%;
         font-size: 13px;
     }
@@ -472,12 +482,12 @@ body {
     }
 
     .news_slider .slide .info h2 {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 
     .news_slider .slide .info p {
         width: 90%;
-        font-size: 11px;
+        font-size: 8px;
     }
 }
 
@@ -501,7 +511,6 @@ body {
     justify-content: center;
     overflow: hidden;
     font-family: "gungsuh";
-    /* min-height: 20vh; */
     max-height: 200px;
     overflow: hidden;
 }
@@ -516,7 +525,7 @@ body {
     padding-bottom: 1vh;
 }
 .news_list_description p{
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 .news_list img {
