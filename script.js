@@ -26,8 +26,6 @@ setInterval(() => {
     }
 }, 5000);
 
-
-
 var slides = document.querySelectorAll('.slide');
 var btns = document.querySelectorAll('.btn');
 let currentSlide = 1;
@@ -105,18 +103,7 @@ function readmore() {
 }
 
 // scroll to top
-
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
-
-
-// var x ="haai";
-// document.querySelector(".heading").textContent="haai"
-// // function sessions(){
-// //     x="hi"
-// // }
-
-// document.querySelector(".heading_content").textContent =x;
